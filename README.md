@@ -3,6 +3,24 @@ The goal of this project is to provide a minimalistic script which fires up a
 single node [Kubernetes](http://kubernetes.io) cluster on the local machine with
 no requirements besides [Docker](http://docker.io).
 
+
+##Status
+
+Trying to get this actually working by moving skydns and kube2sky into docker rather than
+running under kuberentes.
+If there is no dns server running locally, this might just work.
+
+Last run:
+
+Failed to run the docker skydns bits
+
+Manually ran them
+
+Found that port 53 was already bound by dnsmasq
+
+Manually killed it
+
+
 ## Prerequisites
 The only prerequisite for running this is Docker. You *do not* need any
 Kubernetes binaries besides what's provided in this repository.
